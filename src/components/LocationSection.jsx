@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const LocationSection = () => {
     return (
-        <section className="relative w-full py-24 bg-[#020617] overflow-hidden" id="ubicacion" aria-labelledby="location-title">
+        <section className="relative w-full min-h-[500px] py-24 bg-[#020617] overflow-hidden" id="ubicacion" aria-labelledby="location-title">
             {/* Ambient Glow Effects */}
             <div className="absolute inset-0 pointer-events-none flex justify-center items-center z-0">
                 <div className="absolute left-[-10%] top-[20%] w-[50vw] h-[50vw] bg-orange-500/5 rounded-full blur-[120px]"></div>
