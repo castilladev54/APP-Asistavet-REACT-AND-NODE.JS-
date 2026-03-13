@@ -8,6 +8,7 @@ import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import LoadingSpinner from "./components/LoadingSpinner";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
@@ -57,7 +58,6 @@ function App() {
       <div className="relative z-10 w-full min-h-screen">
         <Routes>
           <Route path="/" element={<HomePage />} />
-
           {/* Todas las demás rutas se renderizan dentro de un contenedor centrado */}
           <Route path="*" element={
             <div className="min-h-screen w-full flex items-center justify-center p-4">
@@ -109,7 +109,7 @@ function App() {
           } />
         </Routes>
       </div>
-
+      <Footer />
       <Toaster />
     </div>
   );
